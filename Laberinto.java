@@ -33,16 +33,16 @@ public class Laberinto {
             }
         }
         mat2=copiarMat(mat);
-        int result=(recorrer(1,1)-4)*9;
+        int result=(recorrer(1,1)-2)*9;
         boolean conectado = false;
         if(mat[nMatriz][nMatriz]=='v'){
             conectado=true;
         }
         contador=0;
         mat=copiarMat(mat2);
-        int result2 = (recorrer(nMatriz, nMatriz) - 4) * 9;
+        int result2 = (recorrer(nMatriz, nMatriz) - 2) * 9;
         if(conectado){
-            System.out.println(result);
+            System.out.println(result-18);
         }
         else{
             System.out.println(result+result2);
